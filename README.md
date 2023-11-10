@@ -7,7 +7,7 @@
 
 ## Totals Page (path='/')
 
-Totals/Index Page that displays total points for every user within the last three months from current date (ie. if today is May 23, 2023, the points are tallied for transactions up to Feb 23, 2023 without including older dates the server provides). This is meant as an 'admin' page to see people's points.
+Totals/Index Page that displays total points for every user within the last three months from current date (ie. if today is Nov 9, 2023, the points are tallied for transactions up to Aug 9, 2023 without including older dates the server provides). This is meant as an 'admin' page to see people's points.
 
 ## Transactions Page (path='/transactions')
 
@@ -15,11 +15,11 @@ The Transactions Page shows every transaction made in the last 3 months as it co
 
 ## User Page (path='/id/:id')
 
-The User page shows the three month total for a particular user leading up to the current date, ie. if today is May 23, 2023, the points filtered up to Feb 23, 2023 redardless what the server gives.
+The User page shows the three month total for a particular user leading up to the current date, ie. if today is Nov 9, 2023, the points filtered up to Aug 9, 2023 redardless what the server gives.
 
 If the server gives unordered transactions, the data is also sorted by date for that particular user.
 
-Each month's transactions details is stored in an object with the month name, an array of transactions, and the calculated monthly total. I wanted the month not to show if transactions weren't made that month. Therefore, some users can have as little as month showing and others as much as four months since their oldest transactions that show are still within the 3 month cutoff, ie. Feb 27 is within 3 months of May 23. The bottom of the page reflects the Three Month Total. 
+Each month's transactions details is stored in an object with the month name, an array of transactions, and the calculated monthly total. I wanted the month not to show if transactions weren't made that month. Therefore, some users can have as little as month showing and others as much as four months since their oldest transactions that show are still within the 3 month cutoff, ie. Aug 11 is within 3 months of Nov 9. The bottom of the page reflects the Three Month Total. 
 
 **The application is scalable for any length of data and for any time of the year.**
 
