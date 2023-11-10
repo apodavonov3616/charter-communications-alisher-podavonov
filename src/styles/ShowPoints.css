@@ -1,0 +1,20 @@
+.month-title {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+h3 {
+    text-align: left;
+    margin: 0 20px auto
+}
+
+.monthly-total {
+    text-align: end;
+    margin: 0 15% 15px;
+    font-style: italic;
+}
+
+.total-points {
+    margin: 20px;
+    font-weight: bold
+}

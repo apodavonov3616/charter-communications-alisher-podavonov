@@ -1,0 +1,106 @@
+* {
+    background-color: #f7f5f5;
+}
+
+.App {
+    text-align: center;
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+#simplifyJobsContainer,
+#huntr-react-container-2 {
+    display: none;
+}
+
+table,
+.month-title {
+    text-align: center;
+    color: rgb(129, 7, 7);
+}
+
+h1,
+h2 {
+    background-image: radial-gradient(#9e90c5, #f5d7d2);
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0.5rem auto 0.5rem;
+}
+
+th,
+td {
+    padding: 0.3rem;
+}
+
+tr {
+    background: hsl(50, 50%, 80%);
+}
+
+tr,
+td {
+    transition: .1s ease-in;
+}
+
+tr:nth-child(even) {
+    background: hsla(17, 80%, 61%, 0.7);
+}
+
+td {
+    background: hsla(53, 11%, 85%, 0.7);
+}
+
+/* tr:first-child {
+    background: hsla(12, 79%, 42%, 0.5);
+} */
+
+tr:hover:not(.first-row),
+tr:hover td:empty {
+    background: rgb(59, 59, 59);
+    pointer-events: visible;
+}
+
+tr:hover:not(.first-row) {
+    transform: scale(1.005);
+    font-weight: 700;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+    background: hsl(36, 71%, 67%);
+}
+
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+img {
+    height: 40px;
+}
+
+button {
+    margin: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+td>a,
+td>a:visited,
+td>a:hover {
+    color: rgb(58, 81, 124);
+    background-color: hsla(53, 11%, 85%, 0.7)
+}
